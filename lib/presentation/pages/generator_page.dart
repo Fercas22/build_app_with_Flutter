@@ -1,3 +1,4 @@
+import 'package:codelab/presentation/widgets/history_list_view_widget.dart';
 import 'package:codelab/presentation/widgets/big_card_widget.dart';
 import 'package:codelab/aplication/my_app_state.dart';
 import 'package:provider/provider.dart';
@@ -20,6 +21,11 @@ class GeneratorPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Expanded(
+            flex: 3,
+            child: HistoryListViewWidget(),
+          ),
+          SizedBox(height: 10),
           BigCardWidget(pair: pair),
           SizedBox(height: 10),
           Row(
@@ -41,6 +47,7 @@ class GeneratorPage extends StatelessWidget {
               ),
             ],
           ),
+          Spacer(flex: 2),
         ],
       ),
     );

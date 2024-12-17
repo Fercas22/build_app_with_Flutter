@@ -24,7 +24,7 @@ class FavoritesPage extends StatelessWidget {
         trailing: IconButton(
           icon: Icon(Icons.delete),
           onPressed: () {
-            appState.deleteFavorite(item);
+            appState.removeFavorite(item);
           },
         ),
       );
