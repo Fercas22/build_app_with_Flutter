@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 class GeneratorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-    var pair = appState.current;
+    final appState = context.watch<MyAppState>();
+    final pair = appState.current;
 
     IconData icon;
     if (appState.favorites.contains(pair)) {
