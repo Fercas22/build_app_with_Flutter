@@ -1,8 +1,8 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
-class BigCard extends StatelessWidget {
-  const BigCard({
+class BigCardWidget extends StatelessWidget {
+  const BigCardWidget({
     super.key,
     required this.pair,
   });
